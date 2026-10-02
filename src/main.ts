@@ -69,13 +69,19 @@ WA.onInit().then(async () => {
             myAssignedDesk = deskId;
             clearActionMessage();
             try {
-                WA.chat.sendChatMessage(`💼 Você sentou na Mesa ${deskId}. Se alguém tocar a campainha aqui, você será avisado!`, { scope: 'local' });
+                WA.controls.disablePlayerProximityMeeting();
+            } catch (_) {}
+            try {
+                WA.chat.sendChatMessage(`💼 Você sentou na Mesa ${deskId} (Modo Foco Ativado: sem chamadas indevidas). Para conversar, levante da cadeira ou vá à sala de reunião!`, { scope: 'local' });
             } catch (_) {}
         });
 
         WA.room.area.onLeave(`desk_seat_${deskId}`).subscribe(() => {
             if (isSittingAtDesk === deskId) {
                 isSittingAtDesk = null;
+                try {
+                    WA.controls.restorePlayerProximityMeeting();
+                } catch (_) {}
             }
         });
 

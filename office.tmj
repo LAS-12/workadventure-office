@@ -6179,6 +6179,11 @@
               "name": "deskName",
               "type": "string",
               "value": "Mesa 1"
+            },
+            {
+              "name": "silent",
+              "type": "bool",
+              "value": true
             }
           ]
         },
@@ -6225,6 +6230,11 @@
               "name": "deskName",
               "type": "string",
               "value": "Mesa 2"
+            },
+            {
+              "name": "silent",
+              "type": "bool",
+              "value": true
             }
           ]
         },
@@ -6271,6 +6281,11 @@
               "name": "deskName",
               "type": "string",
               "value": "Mesa 3"
+            },
+            {
+              "name": "silent",
+              "type": "bool",
+              "value": true
             }
           ]
         },
@@ -6317,6 +6332,11 @@
               "name": "deskName",
               "type": "string",
               "value": "Mesa 4"
+            },
+            {
+              "name": "silent",
+              "type": "bool",
+              "value": true
             }
           ]
         },
@@ -6363,6 +6383,11 @@
               "name": "deskName",
               "type": "string",
               "value": "Mesa 5"
+            },
+            {
+              "name": "silent",
+              "type": "bool",
+              "value": true
             }
           ]
         },
@@ -6409,6 +6434,11 @@
               "name": "deskName",
               "type": "string",
               "value": "Mesa 6"
+            },
+            {
+              "name": "silent",
+              "type": "bool",
+              "value": true
             }
           ]
         },
@@ -6455,6 +6485,11 @@
               "name": "deskName",
               "type": "string",
               "value": "Mesa 7"
+            },
+            {
+              "name": "silent",
+              "type": "bool",
+              "value": true
             }
           ]
         },
@@ -6501,6 +6536,11 @@
               "name": "deskName",
               "type": "string",
               "value": "Mesa 8"
+            },
+            {
+              "name": "silent",
+              "type": "bool",
+              "value": true
             }
           ]
         },
@@ -6547,6 +6587,11 @@
               "name": "deskName",
               "type": "string",
               "value": "Mesa 9"
+            },
+            {
+              "name": "silent",
+              "type": "bool",
+              "value": true
             }
           ]
         },
@@ -6593,6 +6638,11 @@
               "name": "deskName",
               "type": "string",
               "value": "Mesa 10"
+            },
+            {
+              "name": "silent",
+              "type": "bool",
+              "value": true
             }
           ]
         },
