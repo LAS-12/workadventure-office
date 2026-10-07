@@ -2257,19 +2257,19 @@
             0,
             0,
             0,
+            2691,
             0,
             0,
+            2691,
             0,
             0,
+            2691,
             0,
             0,
+            2691,
             0,
             0,
-            0,
-            0,
-            0,
-            0,
-            0,
+            2691,
             0,
             0,
             2850,
@@ -6059,7 +6059,8 @@
           "visible": true,
           "width": 192,
           "x": 32,
-          "y": 96
+          "y": 96,
+          "class": "area"
         },
         {
           "height": 128,
@@ -6077,7 +6078,8 @@
           "visible": true,
           "width": 224,
           "x": 640,
-          "y": 544
+          "y": 544,
+          "class": "area"
         },
         {
           "height": 224,
@@ -6110,7 +6112,8 @@
           "visible": true,
           "width": 192,
           "x": 768,
-          "y": 224
+          "y": 224,
+          "class": "area"
         },
         {
           "height": 39.6969696969697,
@@ -6121,7 +6124,8 @@
           "visible": true,
           "width": 50.2727272727272,
           "x": 438.484848484849,
-          "y": 96.3333333333333
+          "y": 96.3333333333333,
+          "class": "area"
         },
         {
           "height": 64,
@@ -6139,7 +6143,8 @@
           "visible": true,
           "width": 32,
           "x": 0,
-          "y": 512
+          "y": 512,
+          "class": "area"
         },
         {
           "height": 32,
@@ -6157,7 +6162,8 @@
           "visible": true,
           "width": 32,
           "x": 64,
-          "y": 544
+          "y": 544,
+          "class": "area"
         },
         {
           "id": 40,
@@ -6175,13 +6181,14 @@
               "type": "string",
               "value": "Sala de Reuni\u00e3o"
             }
-          ]
+          ],
+          "class": "area"
         },
         {
           "id": 41,
           "name": "cabin_seat_1",
+          "class": "area",
           "type": "area",
-          "class": "",
           "x": 288,
           "y": 128,
           "width": 32,
@@ -6199,8 +6206,8 @@
         {
           "id": 42,
           "name": "cabin_seat_2",
+          "class": "area",
           "type": "area",
-          "class": "",
           "x": 384,
           "y": 128,
           "width": 32,
@@ -6218,8 +6225,8 @@
         {
           "id": 43,
           "name": "cabin_seat_3",
+          "class": "area",
           "type": "area",
-          "class": "",
           "x": 480,
           "y": 128,
           "width": 32,
@@ -6237,8 +6244,8 @@
         {
           "id": 44,
           "name": "cabin_seat_4",
+          "class": "area",
           "type": "area",
-          "class": "",
           "x": 576,
           "y": 128,
           "width": 32,
@@ -6256,8 +6263,8 @@
         {
           "id": 45,
           "name": "cabin_seat_5",
+          "class": "area",
           "type": "area",
-          "class": "",
           "x": 672,
           "y": 128,
           "width": 32,
@@ -6275,8 +6282,8 @@
         {
           "id": 46,
           "name": "cabin_seat_6",
+          "class": "area",
           "type": "area",
-          "class": "",
           "x": 288,
           "y": 288,
           "width": 32,
@@ -6294,8 +6301,8 @@
         {
           "id": 47,
           "name": "cabin_seat_7",
+          "class": "area",
           "type": "area",
-          "class": "",
           "x": 384,
           "y": 288,
           "width": 32,
@@ -6313,8 +6320,8 @@
         {
           "id": 48,
           "name": "cabin_seat_8",
+          "class": "area",
           "type": "area",
-          "class": "",
           "x": 480,
           "y": 288,
           "width": 32,
@@ -6332,8 +6339,8 @@
         {
           "id": 49,
           "name": "cabin_seat_9",
+          "class": "area",
           "type": "area",
-          "class": "",
           "x": 576,
           "y": 288,
           "width": 32,
@@ -6351,8 +6358,8 @@
         {
           "id": 50,
           "name": "cabin_seat_10",
+          "class": "area",
           "type": "area",
-          "class": "",
           "x": 672,
           "y": 288,
           "width": 32,
@@ -6370,8 +6377,8 @@
         {
           "id": 51,
           "name": "cabin_bell_1",
+          "class": "area",
           "type": "area",
-          "class": "",
           "x": 288,
           "y": 192,
           "width": 32,
@@ -6383,8 +6390,8 @@
         {
           "id": 52,
           "name": "cabin_bell_2",
+          "class": "area",
           "type": "area",
-          "class": "",
           "x": 384,
           "y": 192,
           "width": 32,
@@ -6396,8 +6403,8 @@
         {
           "id": 53,
           "name": "cabin_bell_3",
+          "class": "area",
           "type": "area",
-          "class": "",
           "x": 480,
           "y": 192,
           "width": 32,
@@ -6409,8 +6416,8 @@
         {
           "id": 54,
           "name": "cabin_bell_4",
+          "class": "area",
           "type": "area",
-          "class": "",
           "x": 576,
           "y": 192,
           "width": 32,
@@ -6422,8 +6429,8 @@
         {
           "id": 55,
           "name": "cabin_bell_5",
+          "class": "area",
           "type": "area",
-          "class": "",
           "x": 672,
           "y": 192,
           "width": 32,
@@ -6435,8 +6442,21 @@
         {
           "id": 56,
           "name": "cabin_bell_6",
+          "class": "area",
           "type": "area",
-          "class": "",
+          "x": 288,
+          "y": 256,
+          "width": 32,
+          "height": 32,
+          "rotation": 0,
+          "visible": true,
+          "properties": []
+        },
+        {
+          "id": 57,
+          "name": "cabin_bell_6",
+          "class": "area",
+          "type": "area",
           "x": 288,
           "y": 352,
           "width": 32,
@@ -6446,10 +6466,23 @@
           "properties": []
         },
         {
-          "id": 57,
+          "id": 58,
           "name": "cabin_bell_7",
+          "class": "area",
           "type": "area",
-          "class": "",
+          "x": 384,
+          "y": 256,
+          "width": 32,
+          "height": 32,
+          "rotation": 0,
+          "visible": true,
+          "properties": []
+        },
+        {
+          "id": 59,
+          "name": "cabin_bell_7",
+          "class": "area",
+          "type": "area",
           "x": 384,
           "y": 352,
           "width": 32,
@@ -6459,10 +6492,23 @@
           "properties": []
         },
         {
-          "id": 58,
+          "id": 60,
           "name": "cabin_bell_8",
+          "class": "area",
           "type": "area",
-          "class": "",
+          "x": 480,
+          "y": 256,
+          "width": 32,
+          "height": 32,
+          "rotation": 0,
+          "visible": true,
+          "properties": []
+        },
+        {
+          "id": 61,
+          "name": "cabin_bell_8",
+          "class": "area",
+          "type": "area",
           "x": 480,
           "y": 352,
           "width": 32,
@@ -6472,10 +6518,23 @@
           "properties": []
         },
         {
-          "id": 59,
+          "id": 62,
           "name": "cabin_bell_9",
+          "class": "area",
           "type": "area",
-          "class": "",
+          "x": 576,
+          "y": 256,
+          "width": 32,
+          "height": 32,
+          "rotation": 0,
+          "visible": true,
+          "properties": []
+        },
+        {
+          "id": 63,
+          "name": "cabin_bell_9",
+          "class": "area",
+          "type": "area",
           "x": 576,
           "y": 352,
           "width": 32,
@@ -6485,10 +6544,23 @@
           "properties": []
         },
         {
-          "id": 60,
+          "id": 64,
           "name": "cabin_bell_10",
+          "class": "area",
           "type": "area",
-          "class": "",
+          "x": 672,
+          "y": 256,
+          "width": 32,
+          "height": 32,
+          "rotation": 0,
+          "visible": true,
+          "properties": []
+        },
+        {
+          "id": 65,
+          "name": "cabin_bell_10",
+          "class": "area",
+          "type": "area",
           "x": 672,
           "y": 352,
           "width": 32,
@@ -7845,7 +7917,7 @@
     }
   ],
   "nextlayerid": 63,
-  "nextobjectid": 62,
+  "nextobjectid": 67,
   "orientation": "orthogonal",
   "properties": [
     {

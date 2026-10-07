@@ -24,6 +24,10 @@ if (fs.existsSync(distDir)) {
         const dst = path.join(nestedDir, item);
         fs.cpSync(src, dst, { recursive: true });
     }
+    if (fs.existsSync('doorbell.mp3')) {
+        fs.copyFileSync('doorbell.mp3', path.join(distDir, 'doorbell.mp3'));
+        fs.copyFileSync('doorbell.mp3', path.join(nestedDir, 'doorbell.mp3'));
+    }
     fs.writeFileSync(path.join(distDir, '.nojekyll'), '');
     console.log('Successfully created nested dist and .nojekyll for complete path compatibility!');
 }
