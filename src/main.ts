@@ -105,6 +105,7 @@ WA.onInit().then(async () => {
         WA.room.area.onLeave(`cabin_seat_${cabinId}`).subscribe(() => {
             if (isInsideCabin === cabinId) {
                 isInsideCabin = null;
+                myAssignedCabin = null;
                 try {
                     WA.ui.banner.closeBanner();
                 } catch (_) {}
@@ -196,6 +197,21 @@ WA.onInit().then(async () => {
                     { scope: 'local' }
                 );
             } catch (_) {}
+
+            // Restore focus banner after ring banner expires
+            setTimeout(() => {
+                if (isInsideCabin === cabinId) {
+                    try {
+                        WA.ui.banner.openBanner({
+                            id: 'cabin-focus-banner',
+                            text: `🔒 Cabine ${cabinId} (Ambiente Silencioso Ativo - Modo Foco)`,
+                            bgColor: "#0f172a",
+                            textColor: "#38bdf8",
+                            closable: true,
+                        });
+                    } catch (_) {}
+                }
+            }, 8500);
         } else if (caller !== playerName) {
             try {
                 WA.chat.sendChatMessage(
@@ -242,6 +258,13 @@ function ringCabin(cabinId: number) {
     try {
         WA.chat.sendChatMessage(`🔔 Você tocou a campainha da Cabine ${cabinId}!`, { scope: 'local' });
     } catch (_) {}
+    clearActionMessage();
+    currentActionMessage = WA.ui.displayActionMessage({
+        message: `Pressione ESPAÇO para tocar a campainha da Cabine ${cabinId} novamente 🔔`,
+        callback: () => {
+            ringCabin(cabinId);
+        }
+    });
 }
 
 function ringMeetingRoom() {
