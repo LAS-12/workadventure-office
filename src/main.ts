@@ -86,8 +86,17 @@ WA.onInit().then(async () => {
                 WA.controls.disableMicrophone();
             } catch (_) {}
             try {
+                WA.ui.banner.openBanner({
+                    id: 'cabin-focus-banner',
+                    text: `🔒 Cabine ${cabinId} (Ambiente Silencioso Ativo - Modo Foco)`,
+                    bgColor: "#0f172a",
+                    textColor: "#38bdf8",
+                    closable: true,
+                });
+            } catch (_) {}
+            try {
                 WA.chat.sendChatMessage(
-                    `🔒 Você entrou na Cabine ${cabinId} (Modo Foco Ativado). Proximidade e microfone desativados para total privacidade. Se alguém tocar a campainha, você será avisado!`,
+                    `🔒 Você entrou na Cabine ${cabinId} (Ambiente Silencioso Ativado). Proximidade e microfone desativados para total privacidade. Se alguém tocar a campainha, você será avisado!`,
                     { scope: 'local' }
                 );
             } catch (_) {}
@@ -96,6 +105,9 @@ WA.onInit().then(async () => {
         WA.room.area.onLeave(`cabin_seat_${cabinId}`).subscribe(() => {
             if (isInsideCabin === cabinId) {
                 isInsideCabin = null;
+                try {
+                    WA.ui.banner.closeBanner();
+                } catch (_) {}
                 try {
                     WA.controls.restorePlayerProximityMeeting();
                 } catch (_) {}
